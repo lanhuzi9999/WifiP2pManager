@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1" >
+
+    <TableRow>
+
+        <TextView android:text="用户名" />
+
+        <EditText android:id="@+id/etUserName" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="密    码" />
+
+        <EditText
+            android:id="@+id/etUserPass"
+            android:inputType="textPassword" />
+    </TableRow>
+
+    <CheckBox
+        android:id="@+id/chkSaveName"
+        android:text="保存用户名" />
+
+    <TableLayout android:stretchColumns="0,1" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:onClick="doClick"
+                android:text="登录" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:onClick="doClick"
+                android:text="重置" />
+        </TableRow>
+    </TableLayout>
+
+</TableLayout>

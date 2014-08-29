@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:title="播放模式"
+        >
+        <menu >
+            <item 
+                android:id="@+id/sub_menu_loop"
+                android:title="循环播放"
+                />
+            <item 
+                android:id="@+id/sub_menu_random"
+                android:title="随机播放"
+                />
+        </menu>
+    </item>
+	<item 
+	    android:id="@+id/menu_exit"
+	    android:title="退出"
+	    />
+</menu>
